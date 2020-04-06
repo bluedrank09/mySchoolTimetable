@@ -2,18 +2,21 @@ def yearsInAList():
     years = range(2020,2025)
     return(years)
 
-def monthsInAList():
-    months = range(1,13)
-    return(months)
+def monthsIndexList():
+    monthsIndex = range(0,12)
+    return(monthsIndex )
+    
 
 if __name__ == "__main__":
     try:
         yearsForLoop = yearsInAList()
-        monthsForLoop = monthsInAList()
+        monthIndex = monthsIndexList()
+
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         
         for yr in yearsForLoop:
-            for mn in monthsForLoop: 
-                print(f"{mn} - {yr}")
+            for mn in monthIndex: 
+                print(f"{months[mn]} - {yr}")
 
     except:
         pass
